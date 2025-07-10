@@ -1,0 +1,56 @@
+body {
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+  background-color: #FFB6C1;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+  
+
+nav {
+  background-color: #fbe8e7;
+  color: #444444;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Pacifico', cursive;
+    }
+
+ nav a {
+  color: #E67E22;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+
+ nav a:hover {
+  color: #f04e30; /* Bright red or accent */
+  transform: scale(1.15);
+    }
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.super-header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: #000000;
+  text-shadow: 2px 2px 5px #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
