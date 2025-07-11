@@ -42,7 +42,7 @@ nav {
 .header-deco {
   position: relative;
   display: inline-block;              /* shrink-wrap container to text */
-  background-image: url("/Petals-Paint-Create/rainbow.svg");
+  background-image: url("../rainbow.svg");
   background-repeat: no-repeat;
   background-size: contain;         /* stretch SVG to cover container */
   background-position: center center;
