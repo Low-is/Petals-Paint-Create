@@ -38,19 +38,73 @@ nav {
   transform: scale(1.15);
     }
 
-.header-container {
-  display: flex;
-  flex-direction: column;
+
+.header-deco {
+  position: relative;
+  display: inline-block;              /* shrink-wrap container to text */
+  background-image: url("rainbow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;         /* stretch SVG to cover container */
+  background-position: center center;
+  padding: 6rem 5rem;               /* space inside cloud around text */
+  margin: 2rem auto;
 }
 
 
 .super-header {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 4rem;
   color: #000000;
   text-shadow: 2px 2px 5px #ffffff;
   letter-spacing: 2px;
   text-transform: uppercase;
+ }
+
+
+/* Decorative Images */
+.paintbrush-top {
+  position: absolute;
+  top: 1vw;        /* closer vertically */
+  right: 3vw;      /* closer horizontally */
+  width: 5vw;
+  heigth: auto;
+  transform: none; /* remove translate or adjust if needed */
 }
+
+
+.plant-bottom {
+  position: absolute;
+  bottom: 1vw;     /* closer vertically */
+  left: 1vw;       /* closer horizontally */
+  width: 5vw;
+  height: auto;
+  transform: none;
+}
+
+#about-me-section {
+  background-color: #E6E6FA;
+  padding: 3rem 1rem;
+  font-family: 'Pacifico', cursive; 
+}
+
+.about-me {
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.about-me-img {
+  object-fit: contain;
+  width: 30%;
+ }
+
+.about-me-text {
+  flex: 1;
+  font-size: 2rem;
+ }
