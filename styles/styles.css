@@ -129,7 +129,7 @@ nav {
   left: 0;
   width: 100%;
   height: 60px; /* adjust height to fit your hearts.svg */
-  background-image: url("love.svg"); /* make sure this path is correct */
+  background-image: url("../love.svg"); /* make sure this path is correct */
   background-repeat: repeat-x;
   background-size: contain;
   background-position: bottom center;
