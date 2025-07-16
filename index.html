@@ -32,6 +32,10 @@
       <i class="fas fa-envelope"></i>
       Contact Me
     </a>
+    <a href="#rsvp">
+     <i class="fas fa-calendar-check"></i>
+      RSVP
+    </a>
   </nav>
 
 
@@ -76,6 +80,52 @@
   </div>
 </section>
 
+<section id="contact">
+<div class="contact-container">
+<h1>Questions? Contact Me!</h1>
+<h2><a href="mailto:PlantitaMami@gmail.com">Email me here</a></h2>
+</div>
+</section>
+
+
+
+<section id="rsvp">
+<div class="rsvp-container">
+<div class="rsvp-header">
+<h1>Event RSVP</h1>
+</div>
+<form id="rsvpFormElem">
+  <label for="name">Name *</label>
+  <input type="text" id="name" name="name" required />
+
+  <label for="email">Email *</label>
+  <input type="email" id="email" name="email" required />
+
+  <label for="guests">Number of Guests</label>
+  <input type="number" id="guests" name="guests" min="0" max="10" value="0" />
+
+  <label for="attendance">Will you attend? *</label>
+  <select id="attendance" name="attendance" required>
+    <option value="">Select...</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    <option value="Maybe">Maybe</option>
+  </select>
+
+<label for="dates">Which dates? *</label>
+<select id="dates" name="dates" required>
+  <option value="">Select...</option>
+  <option value="July 19">July 19</option>
+  <option value="July 27">July 27</option>
+  <option value="Will attend all events">Will attend all events</option>
+</select>
+
+  <button type="submit">Submit RSVP</button>
+</form>
+
+</div>
+</section>
+
 
 
 
@@ -89,9 +139,13 @@
 <li><a href="https://www.flaticon.com/free-icons/cloud" title="cloud icons">Cloud icons created by Smashicons - Flaticon</a></li>
 <li><a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons">Rainbow icons created by juicy_fish - Flaticon</a></li>
 <li><a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a></li>
+<li><a href="https://www.flaticon.com/free-icons/farming-and-gardening" title="farming and gardening icons">Farming and gardening icons created by Freepik - Flaticon</a></li>       
 </ul>
 </footer>
 </div>
+
+<script>
+</script>
 
 
 </body>
