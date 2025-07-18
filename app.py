@@ -14,9 +14,12 @@ app = Flask(__name__)
 # Allow requests from your GitHub Pages domain ONLY
 CORS(app, origins=["https://yourusername.github.io"])
 
+# Load email credentials and SMTP config
 EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 ORGANIZER_EMAIL = os.getenv('ORGANIZER_EMAIL')
+SMTP_SERVER = os.getenv('SMTP_SERVER', 'smtp.gmail.com')
+SMTP_PORT = int(os.getenv('SMTP_PORT', 465))
 
 def send_email(to_email, subject, body):
     msg = MIMEMultipart()
@@ -27,7 +30,7 @@ def send_email(to_email, subject, body):
     msg.attach(MIMEText(body, 'plain'))
 
     try:
-        with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
+        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT) as server:
             server.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
             server.send_message(msg)
         print(f"Email sent to {to_email}")
